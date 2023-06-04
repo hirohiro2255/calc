@@ -46,9 +46,11 @@ const nums = [one, two, three, four, five, six, seven, eight, nine];
 nums.forEach((n, i) => {
   n.addEventListener('click', (event) => {
     if (state.at(-1) === '0' && state.length === 1) {
+      state = `${i + 1}`;
+      result.innerText = state;
       return;
     }
-    state += i + 1;
+    state += `${i + 1}`;
     result.innerText = state;
   });
 });
@@ -83,17 +85,29 @@ enter.addEventListener('click', (event) => {
   }
   const op = state.at(-1);
   const v = Number.parseFloat(state.slice(0, state.length - 1));
-  if (!isNaN(v) && Number.isSafeInteger(v) && isOp(op)) {
+  if (
+    !isNaN(v) &&
+    (Number.isSafeInteger(v) || Number.isFinite(v)) &&
+    isOp(op)
+  ) {
     state += `${v}`;
   }
-  console.log(state);
-
   const lexer = new Lexer(state);
   const parser = new Parser(lexer);
   const calculator = new Calculator(parser);
-  const n = calculator.calc();
-  result.innerText = n === Infinity || isNaN(n) ? 0 : n.toString();
-  state = n === Infinity || isNaN(n) ? 0 : n.toString();
+  const n = calculator.cc();
+  let strNum = n.toString();
+  if (strNum.includes('.')) {
+    const dotIndex = strNum.indexOf('.');
+    let decimalPointValue = strNum.slice(dotIndex + 1);
+    if (decimalPointValue.length > 3) {
+      decimalPointValue = decimalPointValue.slice(0, 3);
+    }
+    const integer = strNum.slice(0, dotIndex);
+    strNum = `${integer}.${decimalPointValue}`;
+  }
+  result.innerText = n === Infinity || isNaN(n) ? 0 : strNum;
+  state = n === Infinity || isNaN(n) ? 0 : strNum;
 });
 
 reset.addEventListener('click', (event) => {

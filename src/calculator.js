@@ -143,7 +143,7 @@ class Calculator {
     }
   }
 
-  calc() {
+  cc() {
     const tree = this.parser.parse();
     if (tree === null) {
       return '';
