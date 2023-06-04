@@ -222,11 +222,10 @@ class Calculator {
       return this.numberNode(node);
     } else if (node.constructor.name === 'UnaryOp') {
       return this.unaryNode(node);
+    } else {
+      console.log(node);
+      throw new Error('Parse Error');
     }
-    // } else {
-    //   console.log(node);
-    //   throw new Error('Parse Error');
-    // }
   }
 
   operatorNode(node) {

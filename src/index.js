@@ -38,10 +38,22 @@ nums.forEach((n, i) => {
 });
 
 const enter = document.querySelector('#enter');
+const reset = document.querySelector('#reset');
+const clear = document.querySelector('#clear');
 
 enter.addEventListener('click', (event) => {
   const lexer = new Lexer(state);
   const parser = new Parser(lexer);
   const calculator = new Calculator(parser);
   result.innerText = calculator.calc().toString();
+});
+
+reset.addEventListener('click', (event) => {
+  state = '';
+  result.innerText = 0;
+});
+
+clear.addEventListener('click', (event) => {
+  state = state.slice(0, state.length - 1);
+  result.innerText = state.length === 0 ? 0 : state;
 });

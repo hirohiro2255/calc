@@ -1,6 +1,6 @@
 .screen-container {
   margin-top: 32px;
-  /* margin-bottom: 24px; */
+  margin-bottom: 24px;
   padding-top: 6px;
   padding-top: 29px;
   padding-bottom: 22px;
@@ -8,7 +8,7 @@
   padding-left: 24px;
   background-color: var(--screen-background);
   border-radius: 10px;
-  border: 2px solid var(--error);
+  /* border: 2px solid var(--error); */
 }
 
 .screen-wrapper {}
