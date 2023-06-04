@@ -42,6 +42,6 @@ const enter = document.querySelector('#enter');
 enter.addEventListener('click', (event) => {
   const lexer = new Lexer(state);
   const parser = new Parser(lexer);
-  const interpreter = new Interpreter(parser);
-  result.innerText = interpreter.interpret().toString();
+  const calculator = new Calculator(parser);
+  result.innerText = calculator.calc().toString();
 });
