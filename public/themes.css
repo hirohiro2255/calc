@@ -1,0 +1,83 @@
+.theme1 {
+  --main-background: hsla(222, 26%, 31%, 1);
+  --keypad-container-background: hsl(223, 31%, 20%);
+  --screen-background: hsl(224, 36%, 15%);
+  --del-key-background: hsl(225, 21%, 49%);
+  --del-key-shadow: hsl(224, 28%, 35%);
+  --del-key-hover: hsla(224, 51%, 76%, 1);
+  --del-key-active: rgb(190, 193, 203);
+
+  --enter-key-background: hsl(6, 63%, 50%);
+  --enter-key-shadow: hsl(6, 70%, 34%);
+  --enter-key-hover: hsla(6, 93%, 67%, 1);
+  --enter-key-active: rgb(242, 213, 210);
+
+  --enter-key-text: hsl(0, 0%, 100%);
+  --keypad-background: hsl(30, 25%, 89%);
+  --keypad-shadow: hsl(28, 16%, 65%);
+  --keypad-hover: hsla(31, 100%, 100%, 1);
+  --main-text: hsl(0,0%,100%);
+  /* --main-text: hsl(221, 14%, 31%); */
+  --sub-text: hsl(0,0%,100%);
+
+  /* custom */
+  --keypad-color: hsla(221, 14%, 31%, 1);
+  --keypad-active-color: hsl(223,31%,20%);
+  /* --keypad-active-color: rgb(55, 60, 73); */
+}
+
+.theme2 {
+  --main-background: hsla(0, 0%, 90%, 1);
+  --keypad-container-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  --del-key-background: hsl(185, 42%, 37%);
+  --del-key-shadow: hsl(185, 58%, 25%);
+  --del-key-hover: hsla(184, 40%, 56%, 1);
+  --del-key-active: rgb(218, 228, 228);
+
+  --enter-key-background: hsl(25, 98%, 40%);
+  --enter-key-shadow: hsl(25, 99%, 27%);
+  --enter-key-text: hsl(0, 0%, 100%);
+  --enter-key-hover: hsla(25, 100%, 61%, 1);
+  --enter-key-active: rgb(239, 212, 192);
+
+  --keypad-background: hsl(45, 7%, 89%);
+  --keypad-shadow: hsl(35, 11%, 61%);
+  --keypad-hover:  hsla(0, 0%, 100%, 1);
+
+  --main-text: hsl(60, 10%, 19%);
+  --sub-text: hsl(0, 0%, 100%);
+
+  /* custom */
+  --keypad-color: hsla(60, 10%, 19%, 1);
+  --keypad-active-color: rgb(34, 34, 28);
+}
+
+.theme3 {
+  --main-background: hsla(268, 75%, 9%, 1);
+  --keypad-container-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+  --del-key-background: hsl(281, 89%, 26%);
+  --del-key-shadow: hsl(285, 91%, 52%);
+  --del-key-hover: hsla(280, 56%, 44%, 1);
+  --del-key-active: rgb(238, 224, 245);
+
+  --enter-key-background: hsl(176, 100%, 44%);
+  --enter-key-shadow: hsl(177, 92%, 70%);
+  --enter-key-text: hsl(198, 20%, 13%);
+  --enter-key-hover: hsla(176, 100%, 79%, 1);
+  --enter-key-active: rgb(70, 77, 77);
+
+  --keypad-background: hsl(268, 47%, 21%);
+  --keypad-shadow: hsl(290, 70%, 36%);
+  --keypad-hover: hsla(268, 54%, 44%, 1);
+
+  --main-text: hsl(52, 100%, 62%);
+  --sub-text: hsl(0, 0%, 100%);
+
+  /* custom */
+  --keypad-color: hsla(52, 100%, 62%, 1);
+  --keypad-active-color: rgb(118, 105, 22);
+
+}
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/sanitize.css" />
+    <link rel="stylesheet" href="public/themes.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="public/header.css" />
+    <link rel="stylesheet" href="public/screen.css" />
+    <link rel="stylesheet" href="public/keypad.css" />
+  </head>
+  <body class="theme1">
+    <main class="container">
+      <header class="header">
+        <h1 class="main-heading">calc</h1>
+        <div class="toggle-container">
+          <div class="scale-group">
+            <div>
+              <small class="scale">1</small>
+              <small class="scale">2</small>
+              <small class="scale">3</small>
+            </div>
+          </div>
+          <div class="toggle-group">
+            <label for="themeToggler" class="toggle-theme">THEME</label>
+            <input
+              id="themeToggler"
+              type="range"
+              name="theme-toggle"
+              id=""
+              min="0"
+              max="2"
+              value="0"
+            />
+          </div>
+        </div>
+      </header>
+      <section class="screen-container">
+        <div class="screen-wrapper">
+          <!-- <h3 class="whole-equation" id="whole-equation"></h3> -->
+          <h2 class="result" id="result"></h2>
+        </div>
+      </section>
+      <!-- <section class="error-container">
+        <h4 class="error-msg">Error comes here</h4>
+      </section> -->
+      <div class="keypad-container" id="keypad-container">
+        <div class="keypad-wrapper">
+          <button class="keypad" id="seven" value="7">7</button>
+          <button class="keypad" id="eight" value="8">8</button>
+          <button class="keypad" id="nine" value="9">9</button>
+          <!-- Clear and All Clear -->
+          <button class="keypad delete all-clear" id="delete" value="clear">
+            C
+          </button>
+          <button class="keypad" id="four" value="4">4</button>
+          <button class="keypad" id="five" value="5">5</button>
+          <button class="keypad" id="six" value="6">6</button>
+          <button class="keypad" id="add" value="+">+</button>
+
+          <button class="keypad" id="one" value="1">1</button>
+          <button class="keypad" id="two" value="2">2</button>
+          <button class="keypad" id="three" value="3">3</button>
+          <button class="keypad" id="sub" value="-">-</button>
+
+          <button class="keypad" id="dot" value=".">.</button>
+          <button class="keypad" id="zero" value="0">0</button>
+          <button class="keypad" id="div" value="/">/</button>
+          <button class="keypad" id="mul" value="*">x</button>
+
+          <button class="keypad reset" id="reset" value="reset">RESET</button>
+          <button class="keypad enter" id="enter" value="enter">=</button>
+        </div>
+      </div>
+    </main>
+    <script src="src/toggle.js"></script>
+    <script src="src/interpreter.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>

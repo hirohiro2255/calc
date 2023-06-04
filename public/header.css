@@ -1,0 +1,77 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-heading {
+  font-size: 2rem;
+  color: var(--main-text);
+  line-height: 0.92;
+  letter-spacing: -0.53px;
+  align-self: center;
+}
+
+.toggle-container {
+  width: calc((139 / 320) * 100%);
+  max-width: 139px;
+}
+
+.toggle-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle-theme {
+  /* align-self: flex-end; */
+  color: var(--main-text);
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.92;
+  letter-spacing: 1px;
+}
+
+.scale-group {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--main-text);
+  margin-bottom: 5px;
+}
+
+.scale-group > div {
+  width: 51%;
+  display: flex;
+  justify-content: space-around;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--keypad-container-background);
+  height: 26px;
+  width: 51%;
+  border-radius: 13px;
+}
+
+input[type="range"]::-webkit-slider-thumb { /* for webkit or blink powered browser */
+  -webkit-appearance: none;
+  background: var(--enter-key-background);
+  height: 16px;
+  width: 16px;
+  border-radius: 13px;
+}
+input[type="range"]::-ms-tooltip {
+  display: none;
+}
+input[type="range"]::-moz-range-track {
+  height: 0;
+}
+input[type="range"]::-moz-range-thumb {
+  background: var(--enter-key-background);
+  height: 16px;
+  width: 16px;
+  border: none;
+  border-radius: 13px;
+}
+
+

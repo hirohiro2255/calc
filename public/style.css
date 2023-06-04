@@ -1,0 +1,29 @@
+:root {
+  --error: rgb(238, 29, 5);
+}
+
+* {
+  font-family: 'League Spartan', sans-serif;
+}
+
+h1, h2, h3, h4, p, ul, button {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-color: var(--main-background);
+}
+
+.container {
+  width: 88%;
+  max-width: 540px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 31px;
+  /* margin-right: clamp(1.5rem, -7.875rem + 40vw, 28.125rem);
+  margin-left: clamp(1.5rem, -7.875rem + 40vw, 28.125rem); */
+}
+
