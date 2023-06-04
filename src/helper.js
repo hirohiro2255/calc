@@ -18,3 +18,7 @@ function isDigit(v) {
 function checkType(v) {
   return Object.prototype.toString.call(v);
 }
+
+function isOp(c) {
+  return c === '+' || c === '-' || c === '*' || c === '/';
+}

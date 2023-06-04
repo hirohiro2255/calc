@@ -26,7 +26,12 @@ class Lexer {
 
   integer() {
     let result = '';
-    while (this.currentChar !== null && isDigit(this.currentChar)) {
+    // counter to count dot
+    let dot = 0;
+    while (
+      this.currentChar !== null &&
+      (isDigit(this.currentChar) || this.currentChar === '.')
+    ) {
       result += this.currentChar;
       this.advance();
     }
