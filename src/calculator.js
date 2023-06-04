@@ -1,31 +1,3 @@
-class Token {
-  constructor(type, value) {
-    this.type = type;
-    this.value = value || null;
-  }
-}
-
-const TokenType = {
-  INTEGER: 'integer',
-  PLUS: 'plus',
-  MINUS: 'minus',
-  MUL: 'mul',
-  DIV: 'div',
-  LPAREN: '(',
-  RPAREN: ')',
-  EOF: 'eof',
-};
-
-function isDigit(v) {
-  const n = Number.parseFloat(v);
-
-  return !isNaN(n) && Number.isSafeInteger(n);
-}
-
-function checkType(v) {
-  return Object.prototype.toString.call(v);
-}
-
 class Lexer {
   constructor(text) {
     this.text = text;
