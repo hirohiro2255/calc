@@ -71,7 +71,7 @@ zero.addEventListener('click', (event) => {
   if (n === '0') {
     return;
   }
-  state += event.currentTarget.value;
+  state += event.currentTarget.value.toString();
   result.innerText = state;
 });
 
@@ -107,7 +107,7 @@ enter.addEventListener('click', (event) => {
     strNum = `${integer}.${decimalPointValue}`;
   }
   result.innerText = n === Infinity || isNaN(n) ? 0 : strNum;
-  state = n === Infinity || isNaN(n) ? 0 : strNum;
+  state = n === Infinity || isNaN(n) ? '0' : strNum;
 });
 
 reset.addEventListener('click', (event) => {
