@@ -84,6 +84,9 @@
     if (state.length === 0) {
       return;
     }
+    if (state.endsWith('.')) {
+      state = state.slice(0, state.length - 1);
+    }
     const op = state.at(-1);
     const v = Number.parseFloat(state.slice(0, state.length - 1));
     if (
