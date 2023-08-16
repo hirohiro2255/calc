@@ -16,7 +16,6 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
 
 ### The challenge
@@ -60,8 +59,16 @@ Since there are too many things to write all down in here, I'm going to blog abo
 
 - [create your own compiler](https://citw.dev/tutorial/create-your-own-compiler) - This helped me understand outline of how compiler (or interpreter) works. Quite recommended for absolute beginners who are eager to learn compiler.
 
-
 ## Author
 
 - Frontend Mentor - [@hirohiro2255](https://www.frontendmentor.io/profile/hirohiro2255)
 - Twitter - [@hrkzhrn](https://www.twitter.com/hrkzhrn)
+
+```mermaid
+flowchart LR
+
+A[Hard] -->|あ| B(Round)
+B --> C{Decision}
+C -->|い| D[Result 1]
+C -->|う| E[Result 2]
+```

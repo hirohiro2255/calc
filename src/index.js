@@ -1,3 +1,8 @@
+const lexer = new Lexer('-2 * -2 / (2 + 2)');
+const parser = new Parser(lexer);
+const calculator = new Calculator(parser);
+const n = calculator.cc();
+console.log(n);
 (() => {
   const BUTTON = '[object HTMLButtonElement]';
   const keypadContainer = document.querySelector('#keypad-container');
